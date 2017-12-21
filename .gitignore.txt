@@ -1,0 +1,2 @@
+/grid_css/node_modules
+/grid_css/.sass-cache
