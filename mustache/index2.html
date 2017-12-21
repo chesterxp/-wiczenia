@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Mustache.js - Lista książek w bibliotece</title>
+<style>
+  body{
+    background: grey;
+  }
+</style>
+        
+</head>
+<body>
+<main>
+    <h1>Lista Książek</h1>
+    <div id="books-list"></div>
+</main>
+        
+<script src="js/handlebars-v4.0.10.js"></script>
+
+<script
+  src="http://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+ 
+<!-- TEMPLATES -->
+<script id="books-template" type="x-tmpl-mustache">
+<ul>
+    {{#books}}
+    <li>
+        <h2>{{title}}</h2>
+        <i>{{author}}</i> <br />
+        <span>cena: {{price}} PLN</span> <br />
+        <span>rok wyd. {{year}}</span>
+    </li>
+    {{/books}}
+
+    {{^books}}
+    <li>Nie znaleziono żadnych książek...</li>
+    {{/books}}
+</ul>
+</script>
+
+<!-- LOGIC -->
+<script>  
+var library = {books: [
+            {title: 'Pan Tadeusz', author: 'Adam Mickiewicz', price: 40, year: 1834},
+            {title: 'Potop', author: 'Henryk Sienkiewicz', price: 35, year: 1886},
+            {title: 'Wesele', author: 'Stanisław Wyspiański', price: 25, year: 1901},
+            {title: 'Dziady', author: 'Adam Mickiewicz', price: 66, year: 1822},
+            {title: 'Lalka', author: 'Bolesław Prus', price: 39, year: 1890},
+            {title: 'Quo Vadis', author: 'Henryk Sienkiewicz', price: 40, year: 1895}
+        ]};
+
+var booksTemplate = jQuery('#books-template').html();
+
+var content = Mustache.render(booksTemplate, library);
+
+jQuery('#books-list').html(content);
+
+</script>
+
+</body>
+</html>

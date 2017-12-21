@@ -1,0 +1,100 @@
+.margin {
+  margin-top: 40px; }
+
+#game_result_art {
+  margin-top: 5px;
+  font-family: 'Roboto', sans-serif;
+  background: #2b313d;
+  text-align: left;
+  background: #efefef; }
+  #game_result_art .node_title ul {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0;
+    position: absolute;
+    top: -35px; }
+    #game_result_art .node_title ul li::after {
+      content: ">";
+      font-size: 11px;
+      color: #b2b2b2;
+      margin: 0 2px; }
+    #game_result_art .node_title ul li:last-child::after {
+      content: ""; }
+    #game_result_art .node_title ul a {
+      font-size: 11px;
+      color: #b2b2b2; }
+  #game_result_art .node_table table {
+    width: 100%;
+    border-collapse: collapse; }
+    #game_result_art .node_table table th, #game_result_art .node_table table td {
+      height: 40px;
+      text-align: left; }
+    #game_result_art .node_table table thead tr th {
+      font-size: 13px;
+      color: #888888;
+      font-weight: normal; }
+    #game_result_art .node_table table thead tr .no {
+      width: 8%;
+      text-align: center; }
+    #game_result_art .node_table table thead tr .flag {
+      width: 5%; }
+    #game_result_art .node_table table thead tr .player {
+      width: 52%; }
+    #game_result_art .node_table table thead tr .country {
+      width: 20%; }
+    #game_result_art .node_table table thead tr .result {
+      width: 15%;
+      text-align: center; }
+    #game_result_art .node_table table tbody tr {
+      border-top: 1px solid #dddddd;
+      color: #020202; }
+      #game_result_art .node_table table tbody tr:first-child {
+        font-weight: bold; }
+        #game_result_art .node_table table tbody tr:first-child a {
+          font-weight: bold; }
+      #game_result_art .node_table table tbody tr a {
+        color: #020202;
+        text-decoration: none; }
+        #game_result_art .node_table table tbody tr a:hover {
+          text-decoration: underline; }
+    #game_result_art .node_table table tbody .empty .no {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, -18%);
+      font-size: 35px;
+      color: #888888;
+      line-height: 20px; }
+    #game_result_art .node_table table tbody .no {
+      text-align: center; }
+    #game_result_art .node_table table tbody .flag {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: 65%; }
+    #game_result_art .node_table table tbody .player a {
+      color: #020202; }
+    #game_result_art .node_table table tbody .country {
+      position: relative;
+      left: 4%; }
+    #game_result_art .node_table table tbody .result {
+      text-align: center; }
+  #game_result_art .node_more {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #dddddd; }
+    #game_result_art .node_more a {
+      font-size: 14px;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold; }
+      #game_result_art .node_more a::after {
+        content: ">";
+        margin-left: 5px;
+        font-size: 14px;
+        color: #000;
+        font-weight: bold; }
+
+/*# sourceMappingURL=glowkaInd.css.map */

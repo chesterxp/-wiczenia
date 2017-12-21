@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  
+<style>
+  body {
+  font-size: 20px;
+  background: linear-gradient(280deg, #499f00, #ff0000);
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  background: black;
+  color: white;
+  margin: 20px auto;
+  padding: 30px 50px;
+}
+  
+    #listOfBooks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.book {
+  background: grey;
+  color: white;
+  width: 300px;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 10px 0;
+  border: 2px solid black;
+}
+.book .title, .book .author, .book .publish, .book .publishingHouse {
+  padding: 5px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.19);
+}
+</style>
+  
+</head>
+<body>
+
+<h1>lista ksiązek</h1>
+
+<div id="listOfBooks">
+  <div class="book">
+    <div class="title">Komputery XXI wieku</div>
+    <div class="author">Jan Kowalski</div>
+    <div class="publish">2015</div>
+    <div class="publishingHouse">PWN</div>
+  </div>
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+
+<script>
+  
+var dane = {
+  book : [
+    {title: 'Pan Tadeusz', author: 'Adam Mickiewicz', publish:2016, publishHouse:'PWN', copy:10},
+    {title: 'Komputeru 2017', author: 'DotNet Killers', publish:2000, publishHouse:'PWN', copy:20},
+    {title: 'JavaScripts - new Design', author: 'John Brown', publish:2017, publishHouse:'CSS', copy:0},
+    {title: 'Java', author: 'Jan Kowlski', publish:2014, publishHouse:'PWN', copy:30},
+    {title: 'CSS', author: 'Marian Zawadzki', publish:2017, publishHouse:'MArki', copy:40},
+    {title: 'HTML', author: 'Rysiek Komorowski', publish:2015, publishHouse:'PWN', copy:0},
+    {title: 'PHP - Podstawy programowania', author: 'Łukasz Ksiązka', publish:2017, publishHouse:'Ziomki', copy:50}
+  ]
+};
+    
+
+var szablon = 
+'    {{#book}}'+
+'      <div class="book">'+
+'        <div class="title">{{title}}</div>'+
+'        <div class="author">{{author}}</div>'+
+'        <div class="publish">{{publish}}</div>'+
+'        <div class="publishingHouse">{{publishHouse}}</div>'+  
+'      </div>'+
+'    {{/book}}'+
+'    {{^book}}'+
+'    <li>Nie znaleziono żadnych książek...</li>'+
+'    {{/book}}';
+  
+var wynik = Mustache.render(szablon,dane);
+  
+document.getElementById('listOfBooks').innerHTML = wynik;
+  
+
+  
+</script>
+
+</body>
+</html>
+

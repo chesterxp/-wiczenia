@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<div id="target">Loading...</div>
+
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+
+<script>
+  
+  var dane = {people:[
+      {name:"jan",surname:"kowalski",age:30},
+      {name:"michał",surname:"mielski",age:12},
+      {name:"tomek",surname:"nowak",age:14}
+    ]};
+    
+
+  var szablon = 
+      '{{#people}}'+
+//      'Nazywam się {{people.name}} {{people.surname}}. I mam {{people.age}} lat!';
+      'Nazywam się {{name}} {{surname}}. I mam {{age}} lat!'+
+      '{{/people}}';
+  
+  var wynik = Mustache.render(szablon,dane);
+  
+  document.getElementById('target').innerHTML = wynik;
+  
+
+  
+</script>
+
+</body>
+</html>
+

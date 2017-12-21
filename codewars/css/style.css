@@ -1,0 +1,135 @@
+#geamHead {
+  background: #fff;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  order: 1;
+  margin-top: 20px; }
+  #geamHead ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+  #geamHead a {
+    text-decoration: none; }
+  #geamHead .match_path {
+    display: flex;
+    flex-basis: 38%;
+    justify-content: flex-start;
+    align-items: center; }
+    #geamHead .match_path ul {
+      display: flex;
+      flex-wrap: wrap; }
+      #geamHead .match_path ul a {
+        color: #b2b2b2;
+        font-size: 12px; }
+      #geamHead .match_path ul li:after {
+        content: ">";
+        margin: 0 4px;
+        color: #b2b2b2;
+        font-size: 10px; }
+      #geamHead .match_path ul li:last-child:after {
+        content: ""; }
+  #geamHead #gr_m_penalty {
+    display: flex;
+    flex-basis: 24%;
+    justify-content: space-around;
+    align-items: center; }
+    #geamHead #gr_m_penalty #gr_m_l_penalty, #geamHead #gr_m_penalty #gr_m_r_penalty {
+      color: #ce212d;
+      font-size: 20px;
+      font-weight: bold; }
+    #geamHead #gr_m_penalty #gr_m_penalty_caption {
+      color: black;
+      font-size: 12px;
+      font-weight: bold; }
+  #geamHead #gr_info_l {
+    display: flex;
+    flex-basis: 38%;
+    justify-content: flex-end;
+    align-items: center;
+    color: #b2b2b2;
+    font-size: 11px;
+    text-align: right; }
+
+#game_result_m {
+  display: flex;
+  justify-content: center;
+  background: #efefef;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif; }
+  #game_result_m #gr_l, #game_result_m #gr_r {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 38%; }
+    #game_result_m #gr_l .game_team, #game_result_m #gr_r .game_team {
+      display: flex;
+      align-items: center; }
+      #game_result_m #gr_l .game_team a, #game_result_m #gr_r .game_team a {
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold; }
+      #game_result_m #gr_l .game_team a:first-child, #game_result_m #gr_r .game_team a:first-child {
+        margin-right: 10px; }
+    #game_result_m #gr_l .game_score, #game_result_m #gr_r .game_score {
+      display: flex;
+      flex-direction: column; }
+      #game_result_m #gr_l .game_score b, #game_result_m #gr_r .game_score b {
+        margin-top: 10px;
+        font-size: 13px; }
+  #game_result_m #gr_l {
+    align-items: flex-start; }
+    #game_result_m #gr_l #gr_info_l {
+      display: none; }
+  #game_result_m #gr_r {
+    align-items: flex-end; }
+    #game_result_m #gr_r #gr_info_r {
+      display: none; }
+    #game_result_m #gr_r .game_score {
+      text-align: right; }
+  #game_result_m #gr_m {
+    display: block;
+    flex-basis: 24%;
+    padding: 5px; }
+    #game_result_m #gr_m ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+    #game_result_m #gr_m #gr_m_penalty {
+      display: none; }
+    #game_result_m #gr_m .game_score {
+      padding: 10px 0; }
+      #game_result_m #gr_m .game_score a {
+        display: flex;
+        justify-content: space-around;
+        color: #e42b38;
+        text-decoration: none;
+        font-size: 28px;
+        font-weight: bold; }
+    #game_result_m #gr_m #game_score_sub {
+      display: flex;
+      flex-direction: column; }
+      #game_result_m #gr_m #game_score_sub .score {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-top: 1px solid #d5d5d5;
+        padding: 5px 0; }
+        #game_result_m #gr_m #game_score_sub .score .st1, #game_result_m #gr_m #game_score_sub .score .st2 {
+          color: black;
+          font-size: 18px;
+          font-weight: bold; }
+        #game_result_m #gr_m #game_score_sub .score .snm {
+          color: #8c8c8c;
+          font-size: 12px; }
+    #game_result_m #gr_m #gr_m_live {
+      display: none;
+      text-align: center;
+      color: #e42b38;
+      padding: 5px 0;
+      font-weight: bold; }
+
+@media all and (max-width: 800px) {
+  #game_result_m #gr_l #gr_gt_l_f, #game_result_m #gr_l #gr_gt_r_f, #game_result_m #gr_r #gr_gt_l_f, #game_result_m #gr_r #gr_gt_r_f {
+    display: none; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,180 @@
+
+  #geamHead{
+    background: #fff;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    order: 1;
+    margin-top: 20px;
+    ul{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    a{
+      text-decoration: none; 
+    }
+    .match_path{
+      display: flex;
+      flex-basis: 38%;
+      justify-content: flex-start;
+      align-items: center;
+       ul{
+        display: flex;
+        flex-wrap: wrap;
+        a{
+          color: #b2b2b2;
+          font-size: 12px;
+        }
+        li:after{
+          content: ">";
+          margin: 0 4px;
+          color: #b2b2b2;
+          font-size: 10px;
+        }
+        li:last-child:after{
+          content: "";
+        }
+      }
+    }
+    #gr_m_penalty{
+      display: flex;
+      flex-basis: 24%;
+      justify-content: space-around;
+      align-items: center;
+      #gr_m_l_penalty, #gr_m_r_penalty{
+        color: #ce212d;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      #gr_m_penalty_caption{
+        color: black;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+    }
+    #gr_info_l{
+      display: flex;
+      flex-basis: 38%;
+      justify-content: flex-end;
+      align-items: center;
+      color: #b2b2b2;
+      font-size: 11px;
+      text-align: right;
+
+    }
+  }
+
+  #game_result_m{
+    display: flex;
+    justify-content:center;
+    background: #efefef;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    #gr_l, #gr_r{
+      display: flex;
+      flex-direction:column;
+      flex-basis: 38%;
+      .game_team{
+        display: flex;
+        align-items: center;
+        a{
+          color: black;
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: bold;
+        }
+        a:first-child{
+          margin-right: 10px;
+        }
+      }
+      .game_score{
+        display: flex;
+        flex-direction: column;
+        b{
+          margin-top: 10px;
+          font-size: 13px;
+        }
+      }
+
+    }
+    #gr_l{
+      align-items: flex-start;
+      #gr_info_l{
+        display: none;
+      }
+    }
+    #gr_r{
+      align-items: flex-end;
+      #gr_info_r{
+        display: none;
+      }
+      .game_score{
+        text-align: right;
+      }
+
+    }
+    #gr_m{
+      display: block;
+      flex-basis: 24%;
+      padding: 5px;
+      ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      #gr_m_penalty{
+        display: none;
+      }
+      .game_score{
+        padding: 10px 0;
+        a{
+          display: flex;
+          justify-content: space-around;
+          color: #e42b38;
+          text-decoration: none;
+          font-size: 28px;
+          font-weight: bold;
+        }
+      }
+      #game_score_sub{
+        display: flex;
+        flex-direction: column;
+        .score{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          border-top: 1px solid #d5d5d5;
+          padding: 5px 0;
+          .st1, .st2{
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+
+          }
+          .snm{
+            color: #8c8c8c;
+            font-size: 12px;
+          }
+
+        }
+      }
+      #gr_m_live{
+        display: none;
+        text-align: center;
+        color: #e42b38;
+        padding: 5px 0;
+        font-weight: bold;
+      }
+    }
+  }
+
+@media all and (max-width:800px){
+  #game_result_m{
+    #gr_l, #gr_r{
+      #gr_gt_l_f, #gr_gt_r_f{
+        display: none;
+      }
+    }
+  }
+}
