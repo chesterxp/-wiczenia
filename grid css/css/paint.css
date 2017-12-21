@@ -1,0 +1,44 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.point {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  border-radius: 50%;
+  background: #000;
+  transform: translate(-50%, -50%);
+}
+
+.boxy {
+  margin-bottom: 20px;
+}
+.boxy .kolory, .boxy .grubosc {
+  display: flex;
+  justify-content: center;
+}
+.boxy .kolory .kol, .boxy .kolory .gry, .boxy .grubosc .kol, .boxy .grubosc .gry {
+  background: #000;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+}
+.boxy .kolory .kol:hover, .boxy .kolory .gry:hover, .boxy .grubosc .kol:hover, .boxy .grubosc .gry:hover {
+  background: #fff;
+  color: #000;
+}
+
+.board {
+  width: 800px;
+  height: 400px;
+  background: #ddd;
+  overflow: hidden;
+  outline: 10px black solid;
+}
+
+/*# sourceMappingURL=paint.css.map */

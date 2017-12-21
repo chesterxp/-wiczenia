@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  background: linear-gradient(270deg, #ddd, #fff);
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.box1 {
+  text-align: center;
+}
+.box1 h3 {
+  font-size: 40px;
+  padding: 10px 20px;
+}
+.box1 p {
+  padding: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+.box1 a.btn {
+  border: 2px solid #1c1c1c;
+  color: #1c1c1c;
+  display: inline-block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.582);
+  top: 0;
+  left: 0;
+  display: none;
+}
+.popup .popup-content {
+  width: 600px;
+  height: 340px;
+  margin: 100px auto;
+  position: relative;
+  border: 5px solid #fff;
+  overflow: hidden;
+}
+.popup .popup-content .close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.popup .popup-content a {
+  color: #1c1c1c;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.popup .popup-content a:hover {
+  color: #9c0b0b;
+}
+.popup:target {
+  display: block;
+}
+
+/*# sourceMappingURL=popup.css.map */
