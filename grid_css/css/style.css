@@ -1,0 +1,177 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: #E0E0E0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.gridBox {
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: 70% 30%;
+  -ms-grid-columns: 70% 30%;
+  grid-template-rows: 10% 30% 50% 10%;
+  -ms-grid-template-rows: 10% 30% 50% 10%;
+  grid-template-areas: "nav nav" "header header" "contain contain" "sideBar sideBar" "footer footer";
+  grid-gap: 10px;
+}
+.gridBox > * {
+  box-shadow: 2px 2px 4px #B1AEAE;
+}
+
+.navigation {
+  grid-area: nav;
+  background: #FE4D4D;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.navigation .box {
+  flex: 1;
+  background: #F98A8A;
+  color: white;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+.navigation .box:hover {
+  background: white;
+  color: #F98A8A;
+}
+
+.header {
+  grid-area: header;
+  background: #3DB0F9;
+  color: white;
+  text-align: center;
+  color: white;
+  padding: 30px 0px;
+  letter-spacing: 3px;
+}
+.header h1 {
+  font-size: 2em;
+}
+.header h3 {
+  font-size: 1.5em;
+}
+
+.containBox {
+  grid-area: contain;
+  background: #40FFB0;
+  padding: 10px 20px;
+  text-align: justify;
+}
+.containBox .contain {
+  line-height: 25px;
+}
+.containBox .foto {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.containBox .foto img {
+  width: 50%;
+  height: 300px;
+}
+
+.sideBar {
+  grid-area: sideBar;
+  background: #FD7624;
+}
+.sideBar .side {
+  padding: 20px;
+  margin: 5px 0;
+}
+
+.footer {
+  grid-area: footer;
+  background: #FF2EE9;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+@media screen and (min-width: 736px) {
+  .gridBox {
+    display: grid;
+    grid-template: "nav nav" 10%  "header header" 30%  "contain sideBar" auto "footer footer" 10% / 70% 30%;
+  }
+  .gridBox > * {
+    box-shadow: 2px 2px 4px #B1AEAE;
+  }
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 35% 35% 30%;
+  grid-gap: 10px;
+}
+.wrapper .box {
+  background: #71fd46;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 3px;
+  box-shadow: 2px 2px 4px #2e2e2e;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  bottom: 0px;
+}
+.wrapper .box:hover {
+  filter: brightness(0.9);
+  bottom: -1px;
+}
+.wrapper .box:nth-child(odd) {
+  background-color: #f53d3d;
+}
+
+/*# sourceMappingURL=style.css.map */
