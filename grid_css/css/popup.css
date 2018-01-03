@@ -67,4 +67,34 @@ body {
   display: block;
 }
 
+.testy .btn {
+  display: block;
+  margin-bottom: 30px;
+  background: #727272;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 3px;
+  margin: 10px auto;
+  width: 130px;
+  transition: all 0.3s ease-in-out;
+}
+.testy .btn:hover {
+  background: #ABABAB;
+}
+.testy .wynik, .testy .wynik2 {
+  display: block;
+  background: grey;
+  color: white;
+  font-size: 30px;
+  padding: 10px 30px;
+  border: 1px solid grey;
+  width: 300px;
+  margin-bottom: 10px;
+}
+.testy .wynik3 {
+  background: white;
+  color: grey;
+  border: 1px solid grey;
+}
+
 /*# sourceMappingURL=popup.css.map */
