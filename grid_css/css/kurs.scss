@@ -1,0 +1,77 @@
+.preety{
+    width:70%;
+    margin:100px auto;
+    text-align: center;
+    border-radius: 10px;
+    list-style:none;
+    padding:0;
+    li {
+        background: #4285F4;
+        color:#fff;
+        font-size:20px;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding:20px;
+        margin-bottom:1px;
+        &.first {
+            border-radius: 30px 30px 0 0;
+            background: #2C5FB4;
+        }
+        &.last {
+            border-radius: 0 0 30px 30px;
+            background: #2C5FB4;
+        }
+    }
+}
+
+body{
+    background: #ddd;
+}
+
+.list{
+    list-style-type: none;
+    width: 300px;
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    li{
+        padding: 5px 2px;
+        text-align: center;
+    }
+}
+
+// img{
+//     width: 345px;
+// }
+
+.box{
+    background: #6D6D6D;
+    width: 50%;
+    margin: 10px auto;
+    .tytul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .pierwszy{
+            flex: 2;
+            padding: 10px;
+
+        }
+        .drugi{
+            flex: 2;
+            padding: 10px;
+        }
+    }
+    .tekst{
+        padding: 10px;
+        color: white;
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+}
+ 
+
