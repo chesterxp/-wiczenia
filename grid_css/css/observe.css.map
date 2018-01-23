@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,OAAkB;;;AAGlC,QAAQ;EACJ,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,IAAI",
+"sources": ["observe.scss"],
+"names": [],
+"file": "observe.css"
+}

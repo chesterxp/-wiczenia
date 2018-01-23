@@ -1,0 +1,10 @@
+{
+    "js": {
+        "target": ["main-desk", "main-mobi"],
+        "priority": 251,
+        "libraries": {
+            "jquery" : ["1.4.4"],
+            "intersection_observer_polyfill": ["0.3.0"]
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACI,aAAK;EACD,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,MAAM;EACf,MAAM,EAAE,MAAM;EACd,MAAM,EAAE,eAAe",
+"sources": ["ajax.scss"],
+"names": [],
+"file": "ajax.css"
+}
